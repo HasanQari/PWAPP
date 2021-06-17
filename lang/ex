@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.democlass {
+  color: red;
+}
+</style>
+</head>
+<body>
+
+<h1 id="title">Hello World</h1>
+
+<p id="text">have a nice day ^_^</p>
+
+<button onclick="myFunctionAR()">Ar</button>
+<button onclick="myFunctionEN()">En</button>
+
+
+<script>
+function myFunctionAR() {
+  document.getElementsByTagName("html")[0].setAttribute("dir", "rtl");
+  document.getElementById("title").innerHTML = "مرحبا";
+  document.getElementById("text").innerHTML = "أتمنى لك يوماً سعيداً";
+}
+function myFunctionEN() {
+  document.getElementsByTagName("html")[0].setAttribute("dir", "ltr");
+  document.getElementById("title").innerHTML = "Hello World";
+  document.getElementById("text").innerHTML = "have a nice day ^_^";
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,14 @@
+{
+    "name": "Chati",
+    "short_name": "Chat",
+    "url_start": ".",
+    "display": "standalone",
+    "description": "A chat app.",
+    "icon": [
+        {
+            "src": "res/img/icon.svg",
+            "sizes": "192x192",
+            "type": "image/svg"
+        }
+    ]
+}
