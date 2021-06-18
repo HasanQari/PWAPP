@@ -1,23 +1,31 @@
 ######### App Name #########
 
-
+https://hasanqari.github.io/PWAPP/
 
 ----------------------------
 NOTES:
 ----------------------------
 
 - this app folder from my seen
-- to make app pwa in simple we have to add foder called pwa contain 2 file
+- to make app pwa in simple we have to add 2 files
     1- manifest.json
     {
     "name": "App Name",
     "short_name": "App",
-    "start_url": "/?home=true",
+    "start_url": "/",
+    "scope": "/",
     "icons": [
       {
-        "src": "/res/img/icon.svg",
-        "type": "image/svg",
-        "sizes": "192x192"
+        "src": "/icons/manifest-icon-192.png",
+        "sizes": "192x192",
+        "type": "image/png",
+        "purpose": "maskable any"
+      },
+      {
+        "src": "/icons/manifest-icon-512.png",
+        "sizes": "512x512",
+        "type": "image/png",
+        "purpose": "maskable any"
       }
     ],
     "theme_color": "#3367D6",
@@ -26,7 +34,11 @@ NOTES:
     "orientation": "portrait"
     }
     2- service-worker.js
-    00000
+        importScripts('https://storage.googleapis.com/workbox-cdn/releases/6.0.2/workbox-sw.js');
+        workbox.routing.registerRoute(
+            ({request}) => request.destination === 'image',
+            new workbox.strategies.NetworkFirst()
+        )
 
     And we need to have an img as icon and of course index.html file to apply the add 2 last file in index
     <head> .. <link rel="manifest" href="PWA/manifest.json"> .. </head> 
@@ -41,3 +53,4 @@ NOTES:
 
     for the img we need to create sizes for it by run this line in terminal:
     npx pwa-asset-generator res/img/icon.svg icons ----> res/img/icon.svg ## path of img
+    then >run npx serve -----> to make it works :0 
