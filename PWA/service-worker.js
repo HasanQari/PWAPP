@@ -22,6 +22,8 @@ self.addEventListener("fetch", e => {
     console.log(`intercepting fetch request for: ${e.request.url}`);
 })
 
+
+/////////////////////////////////////////////////////////////////////////////
 //CACHING FILES//
 // const filesToCache = [
 //     './',

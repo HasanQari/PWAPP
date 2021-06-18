@@ -44,15 +44,15 @@
     <!-- Extra Js -->
     <script>
         if ('serviceWorker' in navigator) {
-            navigator.serviceWorker.register('PWA/service-worker.js', {scope: './'})
-            // ('/service-worker.js')
+            navigator.serviceWorker.register('PWA/service-worker.js', { scope: '/', enabled: environment.production, registrationStrategy: 'registerImmediately' })
+                // ('/service-worker.js')
                 .then(function (registration) {
                     console.log("success load");
                     console.log(registration);
                 })
-                    .catch(function (err) {
-                        console.log(err);
-                    });
+                .catch(function (err) {
+                    console.log(err);
+                });
         }
     </script>
 </body>
