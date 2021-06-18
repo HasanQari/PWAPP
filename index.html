@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Prograssive Web App -->
     <link rel="manifest" href="PWA/manifest.json">
-    <!-- <link rel="canonical" href="https://hasanqari.github.io/PWAPP/"> -->
+    <link rel="canonical" href="https://hasanqari.github.io/PWAPP/">
     <!-- BS Style -->
     <link rel="stylesheet" href="asset/css/BScss/bootstrap.min.css">
     <link rel="stylesheet" href="asset/css/BScss/bootstrap.css">
@@ -44,7 +44,7 @@
     <!-- Extra Js -->
     <script>
         if ('serviceWorker' in navigator) {
-            navigator.serviceWorker.register('PWA/service-worker.js', { scope: '/', enabled: environment.production, registrationStrategy: 'registerImmediately' })
+            navigator.serviceWorker.register('PWAPP/service-worker.js', { scope: '/PWAPP/', enabled: environment.production, registrationStrategy: 'registerImmediately' })
                 // ('/service-worker.js')
                 .then(function (registration) {
                     console.log("success load");
