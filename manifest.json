@@ -1,7 +1,7 @@
 {
     "name": "App Name",
     "short_name": "App",
-    "start_url": "https://hasanqari.github.io/PWAPP/",
+    "start_url": "https://hasanqari.github.io/PWAPP/index.html",
     "icons": [
       {
         "src": "/icons/manifest-icon-192.png",
