@@ -54,3 +54,4 @@ NOTES:
     for the img we need to create sizes for it by run this line in terminal:
     npx pwa-asset-generator res/img/icon.svg icons ----> res/img/icon.svg ## path of img
     then >run npx serve -----> to make it works :0 
+    UPDATE: this way works fine only on localhost
