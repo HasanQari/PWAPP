@@ -44,7 +44,7 @@
     <!-- Extra Js -->
     <script>
         if ('serviceWorker' in navigator) {
-            navigator.serviceWorker.register('PWAPP/service-worker.js', { scope: '/PWAPP/', enabled: environment.production, registrationStrategy: 'registerImmediately' })
+            navigator.serviceWorker.register('PWAPP/service-worker.js', { scope: '/PWAPP/'})
                 // ('/service-worker.js')
                 .then(function (registration) {
                     console.log("success load");
